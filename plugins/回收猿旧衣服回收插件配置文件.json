@@ -64,6 +64,27 @@
             "type": "input",
             "default": "1",
             "required": true
+        },
+        {
+            "key": "HSY_APPKEY",
+            "name": "回收猿APPKEY",
+            "type": "input",
+            "placeholder": "平台分配的 APPKEY",
+            "required": true
+        },
+        {
+            "key": "HSY_SECRET",
+            "name": "回收猿SECRET",
+            "type": "input",
+            "placeholder": "平台分配的 SECRET",
+            "required": true
+        },
+        {
+            "key": "HSY_MERCHANT_ID",
+            "name": "商户ID",
+            "type": "input",
+            "placeholder": "默认2",
+            "required": false
         }
     ],
     "dependencies": "requests,requests[socks]"
