@@ -1,4 +1,4 @@
-# 羽化插件 · yuhua-plugins
+# 羽化插件 · yuhua-chajian
 
 > 羽化面板（yuhua-panel）私人插件与脚本仓库
 > Owner: `g1776933879` · 创建: 2026-09-22
@@ -74,7 +74,7 @@ cp 插件/*.py ~/yuhua-panel/data/plugins/
 
 **方式二：从本仓库拉取**
 ```bash
-git clone https://github.com/g1776933879/yuhua-plugins.git
+git clone https://github.com/g1776933879/yuhua-chajian.git
 cp yuhua-plugins/插件/*.py ~/yuhua-panel/data/plugins/
 ```
 
