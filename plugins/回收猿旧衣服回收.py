@@ -86,9 +86,12 @@ ENABLE_DIRECT_FALLBACK = True
 REQUEST_TIMEOUT = 30
 
 BASE_URL = "https://www.52bjy.com"
-APPKEY = "REDACTED_APPKEY"
-SECRET = "REDACTED_SECRET"
-MERCHANT_ID = "2"
+# ⚠️ 安全修正：APPKEY/SECRET 不再硬编码，改为环境变量/羽化配置读取
+#    羽化面板：在插件配置中新增 HSY_APPKEY / HSY_SECRET / HSY_MERCHANT_ID
+#    青龙面板：export HSY_APPKEY=xxx  export HSY_SECRET=xxx
+APPKEY = get_env("HSY_APPKEY", "")
+SECRET = get_env("HSY_SECRET", "")
+MERCHANT_ID = get_env("HSY_MERCHANT_ID", "2")
 
 LOGIN_URL = f"{BASE_URL}/api/app/hsy.php"
 SIGN_INFO_URL = f"{BASE_URL}/api/app/hsy.php"
