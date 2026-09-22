@@ -1,0 +1,70 @@
+{
+    "id": "hsy_recycle",
+    "name": "回收猿旧衣服回收",
+    "version": "1.0.0",
+    "description": "回收猿小程序自动签到、任务、余额查询、自动提现；兼容青龙面板",
+    "author": "custom",
+    "main": "回收猿旧衣服回收.py",
+    "params": [
+        {
+            "key": "YYB_SERVER",
+            "name": "YYB服务列表",
+            "type": "textarea",
+            "placeholder": "格式：地址@账号ID，一行一个账号",
+            "required": true
+        },
+        {
+            "key": "YYB_API_KEY",
+            "name": "YYB_API_KEY",
+            "type": "input",
+            "placeholder": "YYB服务密钥，没有留空",
+            "required": false
+        },
+        {
+            "key": "PLUSPLUS_TOKEN",
+            "name": "PushPlus Token",
+            "type": "input",
+            "placeholder": "推送用，选填",
+            "required": false
+        },
+        {
+            "key": "PROXY_API",
+            "name": "品赞代理API",
+            "type": "input",
+            "placeholder": "代理提取接口，选填",
+            "required": false
+        },
+        {
+            "key": "PROXY_TYPE",
+            "name": "代理类型",
+            "type": "select",
+            "options": [
+                {
+                    "label": "http",
+                    "value": "http"
+                },
+                {
+                    "label": "socks5",
+                    "value": "socks5"
+                }
+            ],
+            "default": "http",
+            "required": true
+        },
+        {
+            "key": "HSY_CHANNEL_ID",
+            "name": "渠道ID",
+            "type": "input",
+            "default": "wx1008",
+            "required": true
+        },
+        {
+            "key": "HSY_WITHDRAW_MIN",
+            "name": "最低提现金额",
+            "type": "input",
+            "default": "1",
+            "required": true
+        }
+    ],
+    "dependencies": "requests,requests[socks]"
+}
