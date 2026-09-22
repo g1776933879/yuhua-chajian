@@ -1,0 +1,6 @@
+# 临时/缓存
+*.tmp
+*.part
+__pycache__/
+*.pyc
+.cache/
